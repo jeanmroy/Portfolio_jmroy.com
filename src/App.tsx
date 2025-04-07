@@ -23,11 +23,13 @@ function App() {
       <Navbar />
       <div className="app-container">
         <div className="content">
-          <AppRouter />
+          <div className="content-wrapper">
+            <AppRouter />
+          </div>
         </div>
-        <Footer />
-      </BrowserRouter>
-    </div>
+      </div>
+    <Footer />
+    </BrowserRouter>
   );
 }
 
