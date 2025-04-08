@@ -19,7 +19,7 @@ function Navbar() {
             to="/about"
             className={`${styles['nav-link']} ${location.pathname === '/about' ? styles.active : ''}`}
           >
-            À propos
+            about
           </Link>
         </li>
         <li className={styles['nav-item']}>
@@ -27,7 +27,7 @@ function Navbar() {
             to="/projects"
             className={`${styles['nav-link']} ${location.pathname === '/projects' ? styles.active : ''}`}
           >
-            Projets
+            projects
           </Link>
         </li>
         <li className={styles['nav-item']}>
@@ -35,7 +35,7 @@ function Navbar() {
             to="/contact"
             className={`${styles['nav-link']} ${location.pathname === '/contact' ? styles.active : ''}`}
           >
-            Contact
+            contact
           </Link>
         </li>
         <li className={styles['nav-item']}>

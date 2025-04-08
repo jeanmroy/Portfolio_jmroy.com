@@ -3,10 +3,9 @@
     width: 100%;
     background-color: black;
     color: white;
-    padding: 1rem 0;
     position: sticky;
     top: 0;
-    z-index: 10;
+    z-index: 100;
     display: flex;
     justify-content: space-between;
     /* Garde l'espace entre le logo et les liens */
@@ -14,21 +13,19 @@
 }
 
 .navbar-brand {
-    margin-left: 18%;/* Pousse le conteneur du logo vers la droite de 20% */
+    margin-left: 15%;
 }
 
 .navbar-brand .logo {
     display: flex;
-    /* Pour aligner l'icône verticalement si besoin */
     align-items: center;
     text-decoration: none;
-    
 }
 
 .navbar-brand .logoIcon {
-    height: 4em;
+    height: 2.5em;
     border-radius: 100px;
-        /* Ajoute un rayon de bordure pour arrondir les coins */
+    /* Ajoute un rayon de bordure pour arrondir les coins */
 }
 
 .logo:hover {
@@ -40,10 +37,10 @@
     padding: 0;
     display: flex;
     justify-content: flex-end;
-    /* Aligne les liens à droite */
-    width: 61%;  /* Occupe 61% de la largeur disponible à droite */
-    margin-right: 18%; /* Pousse la liste des liens vers la gauche de 18% (100% - 61% - marge logo) */
-    text-align: center; /* Peut être retiré car justify-content gère l'alignement */
+    margin-right: 15%;
+    /* Pousse la liste des liens vers la gauche de 18% (100% - 61% - marge logo) */
+    text-align: center;
+    /* Peut être retiré car justify-content gère l'alignement */
 }
 
 .nav-item {
@@ -55,7 +52,7 @@
     text-decoration: none;
     padding: 0.5rem 0;
     position: relative;
-        /* Essaye des valeurs positives ou négatives */
+    /* Essaye des valeurs positives ou négatives */
 }
 
 .nav-link:hover {
@@ -67,6 +64,5 @@
 }
 
 .nav-link .icon {
-    font-size: 26px;
-    margin-top: -4px;
+    font-size: 1em;
 }
