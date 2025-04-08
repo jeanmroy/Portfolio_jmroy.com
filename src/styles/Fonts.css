@@ -15,12 +15,3 @@
     font-style: normal;
     font-display: swap;
 }
-
-@font-face {
-    font-family: 'Proxima Nova';
-    src: local('Proxima Nova Light'),
-        url('./fonts/proximanova_light.otf') format('truetype');
-    font-weight: light;
-    font-style: normal;
-    font-display: swap;
-}
