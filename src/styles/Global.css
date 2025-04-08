@@ -9,21 +9,59 @@ body {
   flex-direction: column;
   align-items: center;
   min-height: 75vh;
-  width: 66%;
+  width: 100%;
   margin-left: auto;
   margin-right: auto;
   text-align: center;
   font-size: calc(10px + 2vmin);
 
-}
-.content-wrapper {
-  width: 100%;
-  max-width: 1200px;
+  /* background-color: blueviolet; */
+
 }
 
-/* Apply this class to the main content area in App.tsx */
 .content {
-  width: 100%;
+  width: 70%;
   flex-grow: 1;
   padding: 20px 0;
+
+  /* background-color: red; */
 }
+
+.content-wrapper {
+  width: 100%;
+
+  align-items: center;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  /* background-color: tomato; */
+}
+
+.title {
+  font-size: 102px;
+  color: #333;
+  margin-bottom: 10px;
+  text-align: left;
+}
+
+.intro {
+  font-size: 24px;
+  color: #757575;
+  text-align: left;
+}
+
+.description {
+  font-size: 18px;
+  color: #333;
+}
+
+.separator {
+  border: none;
+  border-top: 1px solid #ccc;
+  margin: 20px 0;
+  width: 100%;
+}
+
+
