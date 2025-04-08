@@ -1,0 +1,85 @@
+.wrapper {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+    padding: 20px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    /* Allow wrapping for smaller screens */
+}
+
+.left-column {
+    flex: 1;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    min-width: 300px;
+    /* Ensure a minimum width for the text column */
+}
+
+.right-column {
+    flex: 1;
+    min-width: 300px;
+    /* Ensure a minimum width for the image column */
+}
+
+.profile-image {
+    margin-top: 2rem;
+    width: 100%;
+    /* Make image responsive within its container */
+    max-width: 35rem;
+    border-radius: 175px;
+}
+
+.full-width-section {
+    width: 100%;
+    /* Make the skills section take the full width */
+    margin-top: 40px;
+    /* Add some space above the skills section */
+}
+
+.skills-categories {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    /* Responsive grid for categories */
+    gap: 20px;
+}
+
+.skill-category {
+    background-color: #f9f9f9;
+    padding: 15px;
+    border-radius: 5px;
+}
+
+.category-title {
+    font-size: 24px;
+    color: #555;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.category-icon {
+    font-size: 1.2em;
+}
+
+.skills-list {
+    list-style: none;
+    padding: 0;
+}
+
+.skills-list li {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 8px 0;
+    font-size: 16px;
+    color: #333;
+}
+
+.skill-icon {
+    font-size: 1em;
+    color: #007bff;
+    /* Example icon color */
+}

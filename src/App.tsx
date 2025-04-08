@@ -1,34 +1,41 @@
 import { BrowserRouter } from 'react-router-dom';
-import AppRouter from './router';
+import { useEffect, useState } from 'react';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
-import './styles/Global.css';
 import Preloader from './components/Preloading';
-import { useEffect, useState } from 'react';
+import AppRouter from './router';
+
+import './styles/Global.css';
+
+
+function Layout() {
+  return (
+    <div className="app-container">
+      <Navbar />
+      <div className="content">
+        <div className="content-wrapper">
+          <AppRouter />
+        </div>
+      </div>
+      <Footer />
+    </div>
+  );
+}
 
 function App() {
-  const [load, upadateLoad] = useState(true);
+  const [load, setLoad] = useState(true); // Example state
 
   useEffect(() => {
-    const timer = setTimeout(() => {
-      upadateLoad(false);
+    // Simulate loading
+    setTimeout(() => {
+      setLoad(false);
     }, 800);
-
-    return () => clearTimeout(timer);
   }, []);
 
   return (
     <BrowserRouter>
-      {load && <Preloader load={load} />} {/* Rendu conditionnel */}
-      <Navbar />
-      <div className="app-container">
-        <div className="content">
-          <div className="content-wrapper">
-            <AppRouter />
-          </div>
-        </div>
-      </div>
-    <Footer />
+      {load && <Preloader load={load} />}
+      <Layout />
     </BrowserRouter>
   );
 }

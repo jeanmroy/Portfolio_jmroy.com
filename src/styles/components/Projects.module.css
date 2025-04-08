@@ -1,0 +1,32 @@
+.wrapper {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+    padding: 20px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    /* Allow wrapping for smaller screens */
+}
+
+.left-column {
+    flex: 1;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    min-width: 300px;
+    /* Ensure a minimum width for the text column */
+}
+
+.right-column {
+    flex: 1;
+    min-width: 300px;
+    /* Ensure a minimum width for the image column */
+}
+
+.projects-image {
+    margin-top: 2rem;
+    width: 100%;
+    /* Make image responsive within its container */
+    max-width: 35rem;
+    border-radius: 175px;
+}
