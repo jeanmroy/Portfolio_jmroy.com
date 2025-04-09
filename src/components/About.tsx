@@ -17,13 +17,11 @@ function About() {
                     and now to a full-stack developer. I'm passionate about
                     programming backend APIs, networking and learning new technologies. When I'm not coding, I like to go outside in nature.
                 </p>
-
-                <hr className='separator'/>
+                <hr className={style['separator']}/>
             </div>
             <div className={style['right-column']}>
                 <img src={meImage} className={style['profile-image']} />
             </div>
-
             <div className={style['full-width-section']}>
                 <p className='intro'>Below is a summary of the key technical skills and areas of expertise I've developed throughout the years.</p>
                 <div className={style['skills-categories']}>

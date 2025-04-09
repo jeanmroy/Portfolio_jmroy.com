@@ -40,9 +40,10 @@ body {
 }
 
 .title {
+  letter-spacing: -0.4rem;
   font-size: 102px;
   color: #333;
-  margin-bottom: 10px;
+  margin-bottom: 0.2rem;
   text-align: left;
 }
 
@@ -50,11 +51,17 @@ body {
   font-size: 24px;
   color: #757575;
   text-align: left;
+  font-weight: 300;
+  margin-top: -0.2rem;
 }
 
 .description {
   font-size: 18px;
   color: #333;
+  font-weight: 300;
+  margin-top: -0.2rem;
+  letter-spacing: 0.03rem;
+  text-align: justify;
 }
 
 .separator {

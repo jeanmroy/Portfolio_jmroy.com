@@ -9,7 +9,7 @@
 }
 
 .left-column {
-    flex: 1;
+    flex: 0.75;
     text-align: left;
     display: flex;
     flex-direction: column;
@@ -25,10 +25,17 @@
 
 .profile-image {
     margin-top: 2rem;
-    width: 100%;
+    width: 80%;
     /* Make image responsive within its container */
     max-width: 35rem;
-    border-radius: 175px;
+    border-radius: 75px;
+}
+
+.separator {
+    border: none;
+    border-top: 1px solid #ccc;
+    width: 100%;
+    margin-top: 2.3rem;
 }
 
 .full-width-section {

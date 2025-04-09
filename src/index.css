@@ -3,7 +3,4 @@ body {
   font-family: 'Proxima Nova', sans-serif !important;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-
-      overflow-y: auto;
-      /* Permet l'apparition de la barre de défilement si nécessaire */
 }
