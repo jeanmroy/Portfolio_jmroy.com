@@ -22,7 +22,7 @@ function Navbar() {
             about
           </Link>
         </li>
-        <li className={styles['nav-item']}>
+        {/* <li className={styles['nav-item']}>
           <Link
             to="/projects"
             className={`${styles['nav-link']} ${location.pathname === '/projects' ? styles.active : ''}`}
@@ -37,7 +37,7 @@ function Navbar() {
           >
             contact
           </Link>
-        </li>
+        </li> */}
         <li className={styles['nav-item']}>
           <a
             href="https://www.linkedin.com/in/jean-marie-roy"
