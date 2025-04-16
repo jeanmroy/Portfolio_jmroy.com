@@ -1,7 +1,7 @@
 import {Routes, Route, Navigate } from 'react-router-dom';
 import About from '../components/About';
-import Projects from '../components/Projects';
-import Contact from '../components/Contact';
+// import Projects from '../components/Projects';
+// import Contact from '../components/Contact';
 
 function AppRouter() {
     return (
